@@ -25,7 +25,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
         items: [
           ImageIcon(const AssetImage('assets/images/course.png',),size: 30,color: AppColors.backgroundcolor,),
           ImageIcon(const AssetImage('assets/images/doubt.png'),size: 30,color: AppColors.backgroundcolor),
-          Icon(Icons.home,size: 40,color: AppColors.backgroundcolor,),
+          Icon(Icons.home_outlined,size: 40,color: AppColors.backgroundcolor,),
           ImageIcon(const AssetImage('assets/images/exam.png'),size: 30,color: AppColors.backgroundcolor),
           ImageIcon(const AssetImage('assets/images/quiz.png'),size: 30,color: AppColors.backgroundcolor),
         ],

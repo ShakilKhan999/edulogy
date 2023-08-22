@@ -1,6 +1,8 @@
 import 'package:edulogy/BottomNav/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
+import 'Home/home_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: BottomNavigationScreen() ,
+      home: HomePage() ,
     );
   }
 }
