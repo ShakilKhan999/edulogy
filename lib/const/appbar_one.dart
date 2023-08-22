@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
-  Size get preferredSize => Size.fromHeight(150.0); // Set your preferred height
+  Size get preferredSize => Size.fromHeight(140.0); // Set your preferred height
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
       decoration: BoxDecoration(
         color: AppColors.blue,
         borderRadius: BorderRadius.only(
@@ -18,7 +18,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SizedBox(height: 10,),
           Row(
@@ -37,7 +37,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
             ],
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 0),
           Text(
             'Hi Sofia',
             style: TextStyle(
@@ -73,7 +73,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   child: TextFormField(
                     cursorColor: Colors.black,
                     decoration: InputDecoration(
-                      hintText: 'Search for equipment',
+                      hintText: 'Search here',
                       border: InputBorder.none,
                       prefixIcon: Icon(
                         Icons.search,
