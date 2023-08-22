@@ -77,6 +77,148 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Container(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height:35, width:35,
+                              child: Image.asset("assets/images/option-quiz.png"),
+                            ),
+                            SizedBox(height: 5,),
+                            Text("Mock MCQ",style: GoogleFonts.inter(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height:35, width:35,
+                              child: Image.asset("assets/images/written-exam.png"),
+                            ),
+                            SizedBox(height: 5,),
+                            Text("Mock Written",style: GoogleFonts.inter(
+                            fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height:35, width:35,
+                              child: Image.asset("assets/images/book.gif"),
+                            ),
+                            SizedBox(height: 5,),
+                            Text("Book Store",style: GoogleFonts.inter(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height:35, width:35,
+                              child: Image.asset("assets/images/dashboard.png"),
+                            ),
+                            SizedBox(height: 5,),
+                            Text("Dashboard",style: GoogleFonts.inter(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),)
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 15,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height:32, width:32,
+                              child: Image.asset("assets/images/appointment.png"),
+                            ),
+                            SizedBox(height: 5,),
+                            Text("Appointment",style: GoogleFonts.inter(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height:35, width:35,
+                              child: Image.asset("assets/images/reveiw.png"),
+                            ),
+                            SizedBox(height: 5,),
+                            Text("Reveiw",style: GoogleFonts.inter(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height:35, width:35,
+                              child: Image.asset("assets/images/call-me.png"),
+                            ),
+                            SizedBox(height: 5,),
+                            Text("Call Me",style: GoogleFonts.inter(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),)
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height:35, width:35,
+                              child: Image.asset("assets/images/join-with-us.png"),
+                            ),
+                            SizedBox(height: 5,),
+                            Text("Join with us",style: GoogleFonts.inter(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                            ),)
+                          ],
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          )
         ],
       ),
     ));
