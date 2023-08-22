@@ -312,12 +312,12 @@ class HomePage extends StatelessWidget {
                                   Container(
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(20),
-                                      color: AppColors.blue
+                                      color: AppColors.blue,
                                     ),
                                     child: Padding(
                                       padding: const EdgeInsets.fromLTRB(10,4,10,4),
                                       child: Center(child: Text("Join now",style: GoogleFonts.inter(
-                                        fontSize: 12,
+                                        fontSize: 14,
                                         fontWeight: FontWeight.w800,
                                         color: Colors.white
                                       ),),),
