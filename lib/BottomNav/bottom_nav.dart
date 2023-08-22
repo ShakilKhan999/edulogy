@@ -36,13 +36,14 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
         index: _currentIndex,
         backgroundColor: Colors.transparent,
         color:  AppColors.blue,
+        height: 55,
         animationDuration: Duration(milliseconds: 300),
         items: [
-          ImageIcon(const AssetImage('assets/images/course.png',),size: 30,color: AppColors.backgroundcolor,),
-          ImageIcon(const AssetImage('assets/images/doubt.png'),size: 30,color: AppColors.backgroundcolor),
-          Icon(Icons.home_outlined,size: 40,color: AppColors.backgroundcolor,),
-          ImageIcon(const AssetImage('assets/images/exam.png'),size: 30,color: AppColors.backgroundcolor),
-          ImageIcon(const AssetImage('assets/images/quiz.png'),size: 30,color: AppColors.backgroundcolor),
+          ImageIcon(const AssetImage('assets/images/course.png',),size: 25,color: AppColors.backgroundcolor,),
+          ImageIcon(const AssetImage('assets/images/doubt.png'),size: 25,color: AppColors.backgroundcolor),
+          Icon(Icons.home_outlined,size: 25,color: AppColors.backgroundcolor,),
+          ImageIcon(const AssetImage('assets/images/exam.png'),size: 25,color: AppColors.backgroundcolor),
+          ImageIcon(const AssetImage('assets/images/quiz.png'),size: 25,color: AppColors.backgroundcolor),
         ],
         onTap: (index) {
           setState(() {
