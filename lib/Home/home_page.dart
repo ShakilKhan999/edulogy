@@ -13,7 +13,6 @@ class HomePage extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
       backgroundColor: Colors.white,
-      appBar: appBarOne(),
       body: Column(
         children: [
           Padding(
