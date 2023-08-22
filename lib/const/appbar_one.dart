@@ -24,14 +24,20 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(
-                Icons.person,
-                color: Colors.white,
+              Container(
+                height: 30,width: 30,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(90)
+                ),
+                child: ClipRRect(
+                    borderRadius: BorderRadius.circular(90),
+                  child: Image.asset("assets/images/pp.jpg"),
+                ),
               ),
               InkWell(
                 onTap: () {},
                 child: Icon(
-                  Icons.mail_outline,
+                  Icons.notifications_none,
                   color: Colors.white,
                 ),
               ),
