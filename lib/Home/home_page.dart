@@ -7,8 +7,12 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  SafeArea(child: Scaffold(
-      body: Container(
-        child: Text('dfsdf'),
+      body: Column(
+        children: [
+          Container(
+            child: Text('dfsdf'),
+          ),
+        ],
       ),
     ));
   }
