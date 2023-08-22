@@ -1,19 +1,19 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:get/get.dart';
 
 
 AppBar appBarOne() {
 
   return AppBar(
-    toolbarHeight: 40.h,
+    toolbarHeight: 40,
     backgroundColor: Colors.white,
     elevation: 0,
     actions: [
       CircleAvatar(
-        radius: 19.r,
+        radius: 19,
         backgroundColor: const Color(0xFFf3f4f5),
         child: InkWell(
           onTap: (){
@@ -26,13 +26,13 @@ AppBar appBarOne() {
           ),
         ),
       ),
-      SizedBox(width: 5.w),
+      SizedBox(width: 5),
       GestureDetector(
         onTap: () {
 
         },
         child: CircleAvatar(
-          radius: 19.r,
+          radius: 19,
           backgroundColor: const Color(0xFFf3f4f5),
           child: Icon(
             Icons.person,
@@ -40,7 +40,7 @@ AppBar appBarOne() {
           ),
         ),
       ),
-      SizedBox(width: 20.w),
+      SizedBox(width: 20),
     ],
   );
 }

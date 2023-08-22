@@ -6,7 +6,7 @@ import 'package:edulogy/course_page.dart';
 import 'package:edulogy/mock_page.dart';
 import 'package:edulogy/quiz_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 
 
 class BottomNavigationScreen extends StatefulWidget {
