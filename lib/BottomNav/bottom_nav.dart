@@ -1,7 +1,13 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:edulogy/Home/home_page.dart';
+import 'package:edulogy/QApage.dart';
 import 'package:edulogy/const/colors.dart';
+import 'package:edulogy/course_page.dart';
+import 'package:edulogy/mock_page.dart';
+import 'package:edulogy/quiz_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 
 class BottomNavigationScreen extends StatefulWidget {
   const BottomNavigationScreen({super.key});
@@ -13,10 +19,19 @@ class BottomNavigationScreen extends StatefulWidget {
 class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   int _currentIndex = 2;
 
+  // List of screens
+  final List<Widget> _screens = [
+    CoursePage(), // Replace with your actual screen instances
+    QAPage(),
+    HomePage(),
+    MockPage(),
+    QuizPage(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      body: _screens[_currentIndex], // Show the current screen based on index
       bottomNavigationBar: CurvedNavigationBar(
         index: _currentIndex,
         backgroundColor: Colors.transparent,
