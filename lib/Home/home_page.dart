@@ -446,7 +446,7 @@ class HomePage extends StatelessWidget {
                    height: 190,
                    width: 200,
                    child: Card(
-                     color: AppColors.secondaryBlue,
+                     color: AppColors.yellow.withOpacity(0.5),
                      elevation: 4.0,
                      margin: EdgeInsets.all(16.0),
                      child: Container(
