@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:edulogy/Home/home_page.dart';
 import 'package:edulogy/QApage.dart';
 import 'package:edulogy/const/colors.dart';
+
 import 'package:edulogy/course_page.dart';
 import 'package:edulogy/mock_page.dart';
 import 'package:edulogy/quiz_page.dart';
@@ -31,6 +32,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: _screens[_currentIndex], // Show the current screen based on index
       bottomNavigationBar: CurvedNavigationBar(
         index: _currentIndex,

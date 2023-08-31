@@ -1,33 +1,33 @@
 import 'package:edulogy/const/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
-  Size get preferredSize => Size.fromHeight(140.0); // Set your preferred height
+  Size get preferredSize => Size.fromHeight(105.0.h); // Set your preferred height
 
-  @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+      padding: EdgeInsets.symmetric(horizontal: 10.sp, vertical: 0),
       decoration: BoxDecoration(
         color: AppColors.blue,
         borderRadius: BorderRadius.only(
-          bottomLeft: Radius.circular(20),
-          bottomRight: Radius.circular(20),
+          bottomLeft: Radius.circular(20.sp),
+          bottomRight: Radius.circular(20.sp),
         ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          SizedBox(height: 10,),
+          SizedBox(height: 8.h,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                height: 30,width: 30,
+                height: 20.h,width: 20.w,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(90)
+                  borderRadius: BorderRadius.circular(90.sp)
                 ),
                 child: ClipRRect(
                     borderRadius: BorderRadius.circular(90),
@@ -36,38 +36,37 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
               InkWell(
                 onTap: () {},
-                child: Icon(
+                child: const Icon(
                   Icons.notifications_none,
                   color: Colors.white,
                 ),
               ),
             ],
           ),
-          SizedBox(height: 0),
           Text(
             'Hi Sofia',
             style: TextStyle(
               fontWeight: FontWeight.w600,
               color: Colors.white,
-              fontSize: 25,
+              fontSize: 20.sp,
             ),
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 10.h),
           Container(
             width: MediaQuery
                 .of(context)
                 .size
                 .width,
-            height: 50,
+            height: 35.h,
             decoration: ShapeDecoration(
               color: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
-              shadows: [
+              shadows:  [
                 BoxShadow(
                   color: const Color(0x111D1617),
-                  blurRadius: 40,
+                  blurRadius: 40.sp,
                   offset: const Offset(0, 10),
                   spreadRadius: 0,
                 ),
@@ -78,7 +77,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Expanded(
                   child: TextFormField(
                     cursorColor: Colors.black,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       hintText: 'Search here',
                       border: InputBorder.none,
                       prefixIcon: Icon(
@@ -91,19 +90,19 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Text(
                   '| ',
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     fontWeight: FontWeight.w600,
                     color: const Color(0xff9ca3af),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 14.0),
+                  padding: EdgeInsets.only(right: 14.0.sp),
                   child: GestureDetector(
                     onTap: () {},
                     child: Image.asset(
                       'assets/images/Filter.png',
-                      height: 20,
-                      width: 21,
+                      height: 20.h,
+                      width: 21.w,
                       color: Colors.black,
                     ),
                   ),
